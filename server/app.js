@@ -22,10 +22,10 @@ app.use(require('./router/auth'));
 
 //custom middleware function like we can add condition on pages.
 //here I can use request from server and next is used to send responce after succesfull condition
-const middleware = (req, res, next) => {
-console.log('This is first middleare');
-next();
-}
+// const middleware = (req, res, next) => {
+// console.log('This is first middleare');
+// next();
+// }
 
 
 
@@ -35,9 +35,9 @@ res.send('hello world from mohit walia app.js' );
 });
 
 //Here I added the middleware in about page
-app.get('/about',middleware, (req, res) => {
-    res.send('About me page');
-});
+// app.get('/about',middleware, (req, res) => {
+//     res.send('About me page');
+// });
 
 
 app.get('/contact',(req, res) => {
